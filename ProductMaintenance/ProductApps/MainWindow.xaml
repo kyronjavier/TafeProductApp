@@ -14,7 +14,17 @@
         <Button Name="calculateButton" Content="_Calculate" HorizontalAlignment="Left" Height="37" Margin="327,152,0,0" VerticalAlignment="Top" Width="122" Click="calculateButton_Click"/>
         <Button Name="clearButton" Content="C_lear" HorizontalAlignment="Left" Height="34" Margin="327,209,0,0" VerticalAlignment="Top" Width="122" Click="clearButton_Click"/>
         <Button Name="closeButton" Content="Cl_ose" HorizontalAlignment="Left" Height="34" Margin="327,264,0,0" VerticalAlignment="Top" Width="122" Click="closeButton_Click"/>
+<<<<<<< HEAD
         <Label Content="Total after adding &#xA; the delivery charge ($25)" HorizontalAlignment="Left" Margin="26,209,0,0" VerticalAlignment="Top"/>
         <TextBlock Name="totalChargeTextBox" HorizontalAlignment="Left" Margin="190,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" Height="24"/>
         </Grid>
+=======
+        <Label Content="Total after adding &#xA; the delivery charge ($25): " HorizontalAlignment="Left" Margin="26,192,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="totalChargeTextBox" HorizontalAlignment="Left" Margin="190,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" Height="24"/>
+        <Label Content="Total after adding &#xA; the wrap charge ($5): " HorizontalAlignment="Left" Margin="26,230,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="totalChargeAfterWrapTextBox" HorizontalAlignment="Left" Margin="188,238,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="74" Height="24"/>
+        <Label Content="Total charge after GST@10%:" HorizontalAlignment="Left" Margin="26,272,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="totalChargeAfterGSTTextBox" HorizontalAlignment="Center" Margin="0,277,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="74" Height="24"/>
+    </Grid>
+>>>>>>> feat_GST1.2
 </Window>
