@@ -31,6 +31,7 @@ namespace ProductApps
         {
             double totalCharge = 0;
             double totalPayment = 0;
+            double totalWrap = 0;
 
             try
             {
@@ -48,7 +49,6 @@ namespace ProductApps
             totalCharge = totalPayment + 25;
 
             totalChargeTextBox.Text = totalCharge.ToString();
-
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
