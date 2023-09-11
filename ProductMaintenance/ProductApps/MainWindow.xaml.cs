@@ -32,6 +32,7 @@ namespace ProductApps
             double totalCharge = 0;
             double totalPayment = 0;
             double totalWrap = 0;
+            double totalAfterGST = 0;
 
             try
             {
@@ -48,10 +49,13 @@ namespace ProductApps
 
             totalCharge = totalPayment + 25;
 
-            totalChargeTextBox.Text = totalCharge.ToString();
+            totalChargeTextBox.Text = " $ " +Convert.ToString(totalCharge.ToString());
 
             totalWrap = totalPayment + 25 + 5;
-            totalChargeAfterWrapTextBox.Text = Convert.ToString(totalWrap.ToString());
+            totalChargeAfterWrapTextBox.Text = " $ " + Convert.ToString(totalWrap.ToString());
+
+            totalAfterGST = (totalPayment + 25 + 5) * 1.1;
+            totalChargeAfterGSTTextBox.Text = " $ " + Convert.ToString(totalAfterGST.ToString());
 
         }
 
@@ -63,6 +67,7 @@ namespace ProductApps
             totalPaymentTextBlock.Text = "";
             totalChargeTextBox.Text = "";
             totalChargeAfterWrapTextBox.Text = "";
+            totalChargeAfterGSTTextBox.Text = "";
         }
 
         private void closeButton_Click(object sender, RoutedEventArgs e)
