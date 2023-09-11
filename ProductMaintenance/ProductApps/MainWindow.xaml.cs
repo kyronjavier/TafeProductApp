@@ -32,10 +32,9 @@ namespace ProductApps
             double totalCharge = 0;
             double totalPayment = 0;
             double totalWrap = 0;
-<<<<<<< HEAD
-=======
+
             double totalAfterGST = 0;
->>>>>>> feat_GST1.2
+
 
             try
             {
@@ -52,9 +51,9 @@ namespace ProductApps
 
             totalCharge = totalPayment + 25;
 
-<<<<<<< HEAD
+
             totalChargeTextBox.Text = totalCharge.ToString();
-=======
+
             totalChargeTextBox.Text = " $ " +Convert.ToString(totalCharge.ToString());
 
             totalWrap = totalPayment + 25 + 5;
@@ -63,7 +62,7 @@ namespace ProductApps
             totalAfterGST = (totalPayment + 25 + 5) * 1.1;
             totalChargeAfterGSTTextBox.Text = " $ " + Convert.ToString(totalAfterGST.ToString());
 
->>>>>>> feat_GST1.2
+
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
