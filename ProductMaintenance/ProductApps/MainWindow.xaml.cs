@@ -31,6 +31,7 @@ namespace ProductApps
         {
             double totalCharge = 0;
             double totalPayment = 0;
+            double totalWrap = 0;
 
             try
             {
@@ -49,6 +50,9 @@ namespace ProductApps
 
             totalChargeTextBox.Text = totalCharge.ToString();
 
+            totalWrap = totalPayment + 25 + 5;
+            totalChargeAfterWrapTextBox.Text = Convert.ToString(totalWrap.ToString());
+
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
@@ -57,6 +61,8 @@ namespace ProductApps
             priceTextBox.Text = "";
             quantityTextBox.Text = "";
             totalPaymentTextBlock.Text = "";
+            totalChargeTextBox.Text = "";
+            totalChargeAfterWrapTextBox.Text = "";
         }
 
         private void closeButton_Click(object sender, RoutedEventArgs e)
